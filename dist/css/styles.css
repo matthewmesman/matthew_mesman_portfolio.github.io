@@ -10995,6 +10995,10 @@ html {
     font-size: 1.5rem;
   }
 }
+.portfolio-modal .modal-dialog {
+  max-width: 1200px;
+}
+
 .portfolio .portfolio-item {
   cursor: pointer;
   position: relative;
