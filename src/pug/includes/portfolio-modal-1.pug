@@ -17,23 +17,26 @@
 
                                 .divider-custom-line
                             // Portfolio Modal - Image
-                            img.img-fluid.rounded.mb-5(src='assets/img/portfolio/v3remote1.png', alt='...')
+                            img.img-fluid.rounded.mb-5.modal-img(src='assets/img/portfolio/v3remote1.png', alt='...')
                             // Additional Images
                             hr
-                            p.mb-2 Firstly we created a clay model to fit the general persons hand then
-                                | scanned it to create a 3D model of the ergonomic shape. 
-                            img.img-fluid.rounded.mb-5(src='assets/img/portfolio/vbuild1.jpg', alt='...')
+                            p.mb-2 My objective was to create a waterproof remote E-foil remote that incorporated two control inputs. In this case a Trigger to control the throttle of the vehicle and a thumbwheel to control pitch and roll. The device has to be well balanced and integrate all the required electronics. 
+
+
+                            img.img-fluid.rounded.mb-5.modal-img(src='assets/img/portfolio/vbuild1.jpg', alt='...')
                             hr
-                            p.mb-2 From there I was were able to 3d print and tweak the design in CAD based off 
-                                | the point cloud from the scan
-                            img.img-fluid.rounded.mb-5(src='assets/img/portfolio/vbuild2.jpg', alt='...')
+                            p.mb-2 The project began by getting the ergonomic shape sorted. The trigger and thumbwheel were moulded into a clay model that was tweaked and shaped until it clearly fit the general persons hand comfortably. The clay was hardened and rechecked
+                            img.img-fluid.rounded.mb-5.modal-img(src='assets/img/portfolio/vbuild2.jpg', alt='...')
                             hr
-                            p.mb-2 From there I surface modelled the design, I was able to use the point cloud as a reference
-                                | and work towards a final design that incorporated all electronics locating and waterproofing features required.
-                            img.img-fluid.rounded.mb-5(src='assets/img/portfolio/vbuild3.jpg', alt='...')
+                            p.mb-2 I used a shining 3D scanner was used to scan the object. A point cloud was generated from the scan and Poisson Surface reconstruction calculation was performed to create a watertight mesh. I printed that mesh so that it could be tested for further tweaking. 
+
+                            img.img-fluid.rounded.mb-5.modal-img(src='assets/img/portfolio/vbuild3.jpg', alt='...')
                             // Portfolio Modal - Text
-                            p.mb-4
-                                | The next step was to bring the prototype to limited run production.
+                            p.mb-2 
+                                | Now that the ergonomic shape has been found I used that shape combined with the area taken by electronics and battery to flesh out the rough shape of the surface model. Some sketches helped to visualise the shape before going into CAD. 
+                            img.img-fluid.rounded.mb-5.modal-img(src='assets/img/portfolio/V3remote4.jpg', alt='...')
+                            p.mb-2 
+                                | Then I modelled the surface with T-splines, This was quite time intensive I learnt a bunch of tricks to make it faster and as far as I know this is one of the best methods to make a shape that is this organic. Many solid modelling features were then added to finish the remote. Squish percentage for sealing O-ring was calculated and tested. All in all a complicated project requiring a few different tools to complete. 
                             button.btn.btn-primary(data-bs-dismiss='modal')
                                 i.fas.fa-xmark.fa-fw
                                 | Close Window

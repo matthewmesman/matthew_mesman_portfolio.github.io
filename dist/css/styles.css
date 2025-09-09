@@ -10967,6 +10967,23 @@ html {
   color: #6c757d;
 }
 
+.modal-img {
+  width: 70%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-photo-middle {
+  height: 300px;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  display: block;
+  background: #0b3869;
+}
+
 .masthead {
   padding-top: calc(3rem + 50px);
   padding-bottom: 3rem;
