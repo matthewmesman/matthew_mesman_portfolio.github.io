@@ -29,7 +29,7 @@
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Portfolio</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" data-bs-toggle="modal" data-bs-target="#contactModal">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -181,242 +181,271 @@
             <div class="container"><small>Copyright &copy; Matthew Mesman 2025</small></div>
         </div>
         <!-- Portfolio Modals-->
-        <!-- Portfolio Modal 1-->
-        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">E-foil Remote</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5 modal-img" src="assets/img/portfolio/v3remote1.png" alt="..." />
-                                    <!-- Additional Images-->
-                                    <hr />
-                                    <p class="mb-2">My objective was to create a waterproof remote E-foil remote that incorporated two control inputs. In this case a Trigger to control the throttle of the vehicle and a thumbwheel to control pitch and roll. The device has to be well balanced and integrate all the required electronics.</p>
-                                    <img class="img-fluid rounded mb-5 modal-img" src="assets/img/portfolio/vbuild1.jpg" alt="..." />
-                                    <hr />
-                                    <p class="mb-2">The project began by getting the ergonomic shape sorted. The trigger and thumbwheel were moulded into a clay model that was tweaked and shaped until it clearly fit the general persons hand comfortably. The clay was hardened and rechecked</p>
-                                    <img class="img-fluid rounded mb-5 modal-img" src="assets/img/portfolio/vbuild2.jpg" alt="..." />
-                                    <hr />
-                                    <p class="mb-2">I used a shining 3D scanner was used to scan the object. A point cloud was generated from the scan and Poisson Surface reconstruction calculation was performed to create a watertight mesh. I printed that mesh so that it could be tested for further tweaking.</p>
-                                    <img class="img-fluid rounded mb-5 modal-img" src="assets/img/portfolio/vbuild3.jpg" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-2">Now that the ergonomic shape has been found I used that shape combined with the area taken by electronics and battery to flesh out the rough shape of the surface model. Some sketches helped to visualise the shape before going into CAD.</p>
-                                    <img class="img-fluid rounded mb-5 modal-img" src="assets/img/portfolio/V3remote4.jpg" alt="..." />
-                                    <p class="mb-2">Then I modelled the surface with T-splines, This was quite time intensive I learnt a bunch of tricks to make it faster and as far as I know this is one of the best methods to make a shape that is this organic. Many solid modelling features were then added to finish the remote. Squish percentage for sealing O-ring was calculated and tested. All in all a complicated project requiring a few different tools to complete.</p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 2-->
-        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Industrial Robot Cells</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- YouTube Video Embed 1-->
-                                    <div class="mb-4"><iframe width="100%" height="550" src="https://www.youtube.com/embed/MUM-fs6G0N4?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <p class="mb-2">For Micropsi Industries I developed three robot cells to demonstrate use cases of the product. Micropsi had a novel vision system that used reinforcement learning to move towards a target camera image by associating pixel values with direction vector towards the target.</p>
-                                    <img class="img-fluid rounded mb-5 modal-img" src="assets/img/portfolio/robotcell2.png" alt="..." />
-                                    <p class="mb-2">
-                                        The Above video is of a customer aerofoil that is has flexible fasters inserted. The difficulty here that the fasteners morph shape over a number of cycles simulating the variability of these parts in manufacture. Through training the range of fastener shapes that are possible the machine learning is able to account for these differences. For this project I organized the props from the customer, designed the table/cell and transportation system, assembled everything, learnt how to program industrial robots, setup the robot designed camera mounts and gripper fingers, programmed the robot, setup safety bounding box. All cell processes ran without errors demonstrating the product well. I decided to contact this customer in particular and use their parts because this demonstration is particularly eye catching. Aerospace parts were interesting to many of our potential customers at tradeshows and these flexible parts demonstrated the advantage of our
-                                        system well.
-                                    </p>
-                                    <!-- YouTube Video Embed 2-->
-                                    <div class="mb-4"><iframe width="100%" height="550" src="https://www.youtube.com/embed/W7E0-iXt2t4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Above is another of the three cells I developed. This one demonstrates highly reflective parts that are difficult for conventional vision to deal with.</p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 3-->
-        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Archery Bow Grip</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5 modal-img" src="assets/img/portfolio/handle2.png" alt="..." />
-                                    <!-- Additional Images-->
-                                    <hr />
-                                    <p class="mb-2">I started doing archery back in 2023 immediately I was pretty hooked. Quickly I progressed to shooting out to 60 meters. However when I started training with broadheads my accuracy reduced dramatically. I realized this is due to the fact that I was applying a torque at the handle of the bow. With no broadhead the misalignment of the arrow compared to the string velocity vector is quickly righted by the fletching. However when a broadhead is added there are essentially fletching now also at the front of the arrow, meaning that misalignment creates unstable flight. I designed a extra wide bow grip to push more easily through the thumb muscle avoiding the hand wrapping around the grip and applying torque to the bow. Designed in fusion 360 using a mixture of solid and surface modelling.</p>
-                                    <img class="img-fluid rounded mb-5 modal-img" src="assets/img/portfolio/handle4.png" alt="..." />
-                                    <hr />
-                                    <p class="mb-2">From there I was were able to 3d print and tweak the design in CAD based off the point cloud from the scan</p>
-                                    <img class="img-fluid rounded mb-5 modal-img" src="assets/img/portfolio/handle3.png" alt="..." />
-                                    <hr />
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 4-->
-        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" aria-labelledby="portfolioModal4" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Illustrator and concept drawing</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <div class="row justify-content-center mb-4">
-                                        <div class="col-md-4"><img class="img-fluid rounded mb-3" src="assets/img/portfolio/lingcod_complete.png" alt="Photo 1" /></div>
-                                        <div class="col-md-4"><img class="img-fluid rounded mb-3" src="assets/img/portfolio/ling2.png" alt="Photo 2" /></div>
-                                        <div class="col-md-4"><img class="img-fluid rounded mb-3" src="assets/img/portfolio/ling3.png" alt="Photo 3" /></div>
-                                    </div>
-                                    <div class="row justify-content-center mb-4">
-                                        <div class="col-md-4"><img class="img-fluid rounded mb-3" src="assets/img/portfolio/drawing.jpg" alt="Photo 4" /></div>
-                                        <div class="col-md-4"><img class="img-fluid rounded mb-3" src="assets/img/portfolio/drawing3.JPG" alt="Photo 5" /></div>
-                                        <div class="col-md-4"><img class="img-fluid rounded mb-3" src="assets/img/portfolio/drawing2.JPG" alt="Photo 6" /></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Above are some examples of my illustration and concept drawing work.</p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 5-->
-        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" aria-labelledby="portfolioModal5" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Bubble Machine Capstone Project</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5 modal-img" src="assets/img/portfolio/safe.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 6-->
-        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" aria-labelledby="portfolioModal6" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">'Orbuddy' Human Centered Design Project</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5 modal-img" src="assets/img/portfolio/submarine.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     </body>
+    <!-- Portfolio Modal 1-->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">E-foil Remote</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <img class="img-fluid rounded mb-5 modal-img" src="assets/img/portfolio/v3remote1.png" alt="..." />
+                                <!-- Additional Images-->
+                                <hr />
+                                <p class="mb-2">My objective was to create a waterproof remote E-foil remote that incorporated two control inputs. In this case a Trigger to control the throttle of the vehicle and a thumbwheel to control pitch and roll. The device has to be well balanced and integrate all the required electronics.</p>
+                                <img class="img-fluid rounded mb-5 modal-img" src="assets/img/portfolio/vbuild1.jpg" alt="..." />
+                                <hr />
+                                <p class="mb-2">The project began by getting the ergonomic shape sorted. The trigger and thumbwheel were moulded into a clay model that was tweaked and shaped until it clearly fit the general persons hand comfortably. The clay was hardened and rechecked</p>
+                                <img class="img-fluid rounded mb-5 modal-img" src="assets/img/portfolio/vbuild2.jpg" alt="..." />
+                                <hr />
+                                <p class="mb-2">I used a shining 3D scanner was used to scan the object. A point cloud was generated from the scan and Poisson Surface reconstruction calculation was performed to create a watertight mesh. I printed that mesh so that it could be tested for further tweaking.</p>
+                                <img class="img-fluid rounded mb-5 modal-img" src="assets/img/portfolio/vbuild3.jpg" alt="..." />
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-2">Now that the ergonomic shape has been found I used that shape combined with the area taken by electronics and battery to flesh out the rough shape of the surface model. Some sketches helped to visualise the shape before going into CAD.</p>
+                                <img class="img-fluid rounded mb-5 modal-img" src="assets/img/portfolio/V3remote4.jpg" alt="..." />
+                                <p class="mb-2">Then I modelled the surface with T-splines, This was quite time intensive I learnt a bunch of tricks to make it faster and as far as I know this is one of the best methods to make a shape that is this organic. Many solid modelling features were then added to finish the remote. Squish percentage for sealing O-ring was calculated and tested. All in all a complicated project requiring a few different tools to complete.</p>
+                                <button class="btn btn-primary" data-bs-dismiss="modal">
+                                    <i class="fas fa-xmark fa-fw"></i>
+                                    Close Window
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal 2-->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Industrial Robot Cells</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- YouTube Video Embed 1-->
+                                <div class="mb-4"><iframe width="100%" height="550" src="https://www.youtube.com/embed/MUM-fs6G0N4?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                                <!-- Portfolio Modal - Image-->
+                                <p class="mb-2">For Micropsi Industries I developed three robot cells to demonstrate use cases of the product. Micropsi had a novel vision system that used reinforcement learning to move towards a target camera image by associating pixel values with direction vector towards the target.</p>
+                                <img class="img-fluid rounded mb-5 modal-img" src="assets/img/portfolio/robotcell2.png" alt="..." />
+                                <p class="mb-2">
+                                    The Above video is of a customer aerofoil that is has flexible fasters inserted. The difficulty here that the fasteners morph shape over a number of cycles simulating the variability of these parts in manufacture. Through training the range of fastener shapes that are possible the machine learning is able to account for these differences. For this project I organized the props from the customer, designed the table/cell and transportation system, assembled everything, learnt how to program industrial robots, setup the robot designed camera mounts and gripper fingers, programmed the robot, setup safety bounding box. All cell processes ran without errors demonstrating the product well. I decided to contact this customer in particular and use their parts because this demonstration is particularly eye catching. Aerospace parts were interesting to many of our potential customers at tradeshows and these flexible parts demonstrated the advantage of our
+                                    system well.
+                                </p>
+                                <!-- YouTube Video Embed 2-->
+                                <div class="mb-4"><iframe width="100%" height="550" src="https://www.youtube.com/embed/W7E0-iXt2t4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-4">Above is another of the three cells I developed. This one demonstrates highly reflective parts that are difficult for conventional vision to deal with.</p>
+                                <button class="btn btn-primary" data-bs-dismiss="modal">
+                                    <i class="fas fa-xmark fa-fw"></i>
+                                    Close Window
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal 3-->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Archery Bow Grip</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <img class="img-fluid rounded mb-5 modal-img" src="assets/img/portfolio/handle2.png" alt="..." />
+                                <!-- Additional Images-->
+                                <hr />
+                                <p class="mb-2">I started doing archery back in 2023 immediately I was pretty hooked. Quickly I progressed to shooting out to 60 meters. However when I started training with broadheads my accuracy reduced dramatically. I realized this is due to the fact that I was applying a torque at the handle of the bow. With no broadhead the misalignment of the arrow compared to the string velocity vector is quickly righted by the fletching. However when a broadhead is added there are essentially fletching now also at the front of the arrow, meaning that misalignment creates unstable flight. I designed a extra wide bow grip to push more easily through the thumb muscle avoiding the hand wrapping around the grip and applying torque to the bow. Designed in fusion 360 using a mixture of solid and surface modelling.</p>
+                                <img class="img-fluid rounded mb-5 modal-img" src="assets/img/portfolio/handle4.png" alt="..." />
+                                <hr />
+                                <p class="mb-2">From there I was were able to 3d print and tweak the design in CAD based off the point cloud from the scan</p>
+                                <img class="img-fluid rounded mb-5 modal-img" src="assets/img/portfolio/handle3.png" alt="..." />
+                                <hr />
+                                <button class="btn btn-primary" data-bs-dismiss="modal">
+                                    <i class="fas fa-xmark fa-fw"></i>
+                                    Close Window
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal 4-->
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" aria-labelledby="portfolioModal4" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Illustrator and concept drawing</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <div class="row justify-content-center mb-4">
+                                    <div class="col-md-4"><img class="img-fluid rounded mb-3" src="assets/img/portfolio/lingcod_complete.png" alt="Photo 1" /></div>
+                                    <div class="col-md-4"><img class="img-fluid rounded mb-3" src="assets/img/portfolio/ling2.png" alt="Photo 2" /></div>
+                                    <div class="col-md-4"><img class="img-fluid rounded mb-3" src="assets/img/portfolio/ling3.png" alt="Photo 3" /></div>
+                                </div>
+                                <div class="row justify-content-center mb-4">
+                                    <div class="col-md-4"><img class="img-fluid rounded mb-3" src="assets/img/portfolio/drawing.jpg" alt="Photo 4" /></div>
+                                    <div class="col-md-4"><img class="img-fluid rounded mb-3" src="assets/img/portfolio/drawing3.JPG" alt="Photo 5" /></div>
+                                    <div class="col-md-4"><img class="img-fluid rounded mb-3" src="assets/img/portfolio/drawing2.JPG" alt="Photo 6" /></div>
+                                </div>
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-4">Above are some examples of my illustration and concept drawing work.</p>
+                                <button class="btn btn-primary" data-bs-dismiss="modal">
+                                    <i class="fas fa-xmark fa-fw"></i>
+                                    Close Window
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal 5-->
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" aria-labelledby="portfolioModal5" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Bubble Machine Capstone Project</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <img class="img-fluid rounded mb-5 modal-img" src="assets/img/portfolio/safe.png" alt="..." />
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                <button class="btn btn-primary" data-bs-dismiss="modal">
+                                    <i class="fas fa-xmark fa-fw"></i>
+                                    Close Window
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal 6-->
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" aria-labelledby="portfolioModal6" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">'Orbuddy' Human Centered Design Project</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <img class="img-fluid rounded mb-5 modal-img" src="assets/img/portfolio/submarine.png" alt="..." />
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                <button class="btn btn-primary" data-bs-dismiss="modal">
+                                    <i class="fas fa-xmark fa-fw"></i>
+                                    Close Window
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- src/pug/includes/contact-modal.pug-->
+    <!-- Contact modal styled like portfolio modals-->
+    <div class="portfolio-modal modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModal" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Contact</h2>
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <p class="mt-4 mb-2 font-weight-bold text-dark">Phone Number: +64 21 557 062</p>
+                                <p class="mb-4 font-weight-bold text-dark">Email: matthew.mesman@gmail.com</p>
+                                <button class="btn btn-primary" data-bs-dismiss="modal">
+                                    <i class="fas fa-xmark fa-fw"></i>
+                                    Close Window
+                                    <!-- Bootstrap core JS-->
+                                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+                                    <!-- Core theme JS-->
+                                    <script src="js/scripts.js"></script>
+                                    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+                                    <!-- * *                               SB Forms JS                               * *-->
+                                    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+                                    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+                                    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </html>

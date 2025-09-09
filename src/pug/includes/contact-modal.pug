@@ -1,0 +1,22 @@
+// src/pug/includes/contact-modal.pug
+// Contact modal styled like portfolio modals
+
+#contactModal.portfolio-modal.modal.fade(tabindex='-1', aria-labelledby='contactModal', aria-hidden='true')
+    .modal-dialog.modal-xl
+        .modal-content
+            .modal-header.border-0
+                button.btn-close(type='button', data-bs-dismiss='modal', aria-label='Close')
+            .modal-body.text-center.pb-5
+                .container
+                    .row.justify-content-center
+                        .col-lg-8
+                            h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0 Contact
+                            .divider-custom
+                                .divider-custom-line
+                                .divider-custom-icon
+                                .divider-custom-line
+                            p.mt-4.mb-2.font-weight-bold.text-dark Phone Number: +64 21 557 062
+                            p.mb-4.font-weight-bold.text-dark Email: matthew.mesman@gmail.com
+                            button.btn.btn-primary(data-bs-dismiss='modal')
+                                i.fas.fa-xmark.fa-fw
+                                | Close Window

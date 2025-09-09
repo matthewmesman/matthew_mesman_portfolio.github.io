@@ -1,0 +1,28 @@
+// src/pug/contact-modal.pug
+// Standalone contact page styled like a portfolio modal
+
+doctyp html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    title Contact - Matthew Mesman
+    link(href='css/styles.css', rel='stylesheet')
+  body.bg-primary.text-white
+    .portfolio-modal.modal.show(style='display:block; background:rgba(44,62,80,0.9); position:fixed; top:0; left:0; width:100vw; height:100vh; z-index:1050;')
+      .modal-dialog.modal-xl
+        .modal-content
+          .modal-header.border-0
+            a.btn-close(href='index.html', aria-label='Close', style='position:absolute;right:1rem;top:1rem;')
+          .modal-body.text-center.pb-5
+            .container
+              .row.justify-content-center
+                .col-lg-8
+                  h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0 Contact
+                  .divider-custom
+                    .divider-custom-line
+                    .divider-custom-icon
+                    .divider-custom-line
+                  p.mt-4.mb-2.font-weight-bold.text-dark Phone Number: +64 21 557 062
+                  p.mb-4.font-weight-bold.text-dark Email: matthew.mesman@gmail.com
+                  a.btn.btn-primary.mt-3(href='index.html') Back to Home
